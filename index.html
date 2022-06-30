@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile -Khaleel Ibrahim</title>
+    <link rel="icon" type="image/x-icon" href="Images/undraw_tabs_re_a2bd.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a32a87c0f2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="loaderHome">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="cover">
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="logo">
+                <img src="Images/undraw_tabs_re_a2bd.svg" alt="Khaleel">
+                <i class="fa fa-bars" id="menu"></i>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-item"><a href="">About</a></li>
+                <li class="nav-item"><a href="">Projects</a></li>
+                <li class="nav-item"><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="heroSection">
+                <h2>Khaleel Ibrahim</h2>
+                <h4>A Web Develper</h4>
+                <button>Welcome</button>
+            </div>
+            <div class="heroImage">
+                <img src="Images/undraw_programmer_re_owql.svg" alt="">
+            </div>
+        </div>
+
+        <!-- Card Section -->
+        <div class="cardHome">
+            <div class="intro">
+                <h2>Intro</h2>
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+                    aperiam fugit unde, eos distinctio accusamus quas blanditiis fugiat
+                    a perspiciatis vitae consequatur, dignissimos magnam temporibus?
+                    Asperiores debitis quod dolorem eos?
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="cards">
+                    <i class="fas fa-code html"></i>
+                    <h4>HTML</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                        eum pariatur voluptatum possimus est tempore dolores quam quasi
+                        iusto autem!
+                    </p>
+                </div>
+    
+                <div class="cards">
+                    <i class="fab fa-js java"></i>
+                    <h4>Javascript</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                        eum pariatur voluptatum possimus est tempore dolores quam quasi
+                        iusto autem!
+                    </p>
+                </div>
+    
+                <div class="cards">
+                    <i class="fab fa-php php"></i>
+                    <h4>PHP</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                        eum pariatur voluptatum possimus est tempore dolores quam quasi
+                        iusto autem!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="imgsection">
+            <div class="imgSec">
+                <div class="imgCard">
+                    <img src="Images/20220630_151125.jpg" alt="khaleel">
+                </div>
+                <div class="imgText">
+                    <h3>Certification</h3>
+                    <h4>School of Certification</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                        recusandae eius ipsa praesentium veritatis tempore rem tempora
+                        possimus voluptatem nihil adipisci neque fugiat reprehenderit
+                        quia modi odio obcaecati quis quaerat.
+                    </p>
+                    <div class="btn">
+                        <a href="">Explore</a>
+                        <a href="">Recognition</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <div class="footerContent">
+                <h2>Ready For Business?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt inventore
+                    accusantium nemo non consectetur impedit praesentium architecto quisquam
+                    incidunt provident laborum nulla alias, quo quas odio saepe a rerum assumenda.
+                </p>
+                <div class="social">
+                    <a href="https://wa.link/lq2dgi"><i class="fa fa-whatsapp"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/khaleelalhaji/"><i class="fa fa-instagram"></i></a>
+                </div>
+                <div class="copyright">
+                    <h5>Khaleel Ibrahim</h5>
+                    <h4>&copy copyright 2022</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <!-- <script>
+        $(window).on('load', function(){
+            $(".loaderHome").fadeOut(1000);
+            $(".cover").fadeIn(1000);
+        })
+    </script> -->
+
+    <script>
+        $(window).on('load', function(){
+            setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+        });
+        function removeLoader(){
+            $( ".loaderHome" ).fadeOut(500, function() {
+            // fadeOut complete. Remove the loading div
+            $( ".loaderHome" ).remove(); //makes page more lightweight 
+        });  
+        }
+    </script>
+</body>
+</html>

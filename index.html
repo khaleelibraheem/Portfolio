@@ -129,23 +129,11 @@
         </div>
     </div>
     <script src="app.js"></script>
-    <!-- <script>
-        $(window).on('load', function(){
-            $(".loaderHome").fadeOut(1000);
-            $(".cover").fadeIn(1000);
-        })
-    </script> -->
-
     <script>
         $(window).on('load', function(){
-            setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
-        });
-        function removeLoader(){
-            $( ".loaderHome" ).fadeOut(500, function() {
-            // fadeOut complete. Remove the loading div
-            $( ".loaderHome" ).remove(); //makes page more lightweight 
-        });  
-        }
+            $(".loaderHome").fadeOut(1000);
+            $(".cover").css("display", "block").fadeIn(1000);
+        })
     </script>
 </body>
 </html>

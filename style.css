@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
 }
 body,html{
     height: 100%;
@@ -48,7 +49,7 @@ body,html{
 .cover{
     height: 100%;
     background-color: #222;
-    /* display: none; */
+    display: none;
 }
 
 /* Navigation Bar */
@@ -64,7 +65,14 @@ nav{
     background-color: #444;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 15px;
+}
+.logo span{
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: bolder;
+    
 }
 #menu{
     cursor: pointer;
@@ -93,7 +101,6 @@ nav{
 }
 
 .nav-list li a{
-    font-family: 'M PLUS 1p', sans-serif;
     transition: .3s ease-in-out;
     margin: 10px 0;
     text-decoration: none;
@@ -148,6 +155,11 @@ nav{
         transform: scale(1);
         color: rgb(205, 23, 84);
     }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
 }
 
 .openCloseMenu{
@@ -186,14 +198,13 @@ nav{
 .hero h2{
     font-size: 40px;
     letter-spacing: 10px;
-    font-family: 'M PLUS 1p', sans-serif;
 }
 .hero h4{
     margin-top: 20px;
     color: rgb(205, 23, 84);
     letter-spacing: 10px;
-    font-family: 'Amatic SC', cursive;
 }
+
 .hero button{
     cursor: pointer;
     background: transparent;
@@ -201,7 +212,8 @@ nav{
     margin-top: 20px;
     border: 1px solid rgb(205, 23, 84);
     padding: 12px;
-    width: 90px;
+    width: 100px;
+    letter-spacing: 2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -229,10 +241,8 @@ nav{
 .cardHome h2{
     font-size: 30px;
     letter-spacing: 10px;
-    font-family: 'M PLUS 1p', sans-serif;
 }
 .para{
-    font-family: 'Advent Pro', sans-serif;
     letter-spacing: 3px;
 }
 .card{
@@ -266,12 +276,10 @@ nav{
 }
 .cards h4{
     margin-top: 15px;
-    font-family: 'Advent Pro', sans-serif;
     letter-spacing: 3px;
 }
 .cards p{
     margin-top: 15px;
-    font-family: 'Advent Pro', sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -296,7 +304,6 @@ nav{
 .imgText{
     color: #fff;
     width: 400px;
-    font-family: 'Advent Pro', sans-serif;
 }
 
 .imgText h3{
@@ -375,7 +382,6 @@ nav{
     text-align: center;
     display: flex;
     justify-content: center;
-    font-family: 'Advent Pro', sans-serif;
 }
 
 .footerContent{

@@ -14,10 +14,14 @@ body,html{
     height: 100%;
     display: grid;
     place-items: center;
-    position: relative;
+    position: fixed;
     box-sizing: border-box;
     overflow: hidden;
     z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .loaderHome div{
@@ -44,7 +48,7 @@ body,html{
 .cover{
     height: 100%;
     background-color: #222;
-    display: none;
+    /* display: none; */
 }
 
 /* Navigation Bar */
